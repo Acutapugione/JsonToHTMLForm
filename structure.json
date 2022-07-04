@@ -1,0 +1,292 @@
+{
+  "title": "My form definition (Straße am Höfe)",
+  "description": "Please upload this documents",
+  "valid_from": "2022-06-29 08:30:00",
+  "valid_to": null,
+  "active": true,
+  "version": "1.0",
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2022-06-29 08:30:00",
+      "changes": "First Version"
+    }
+  ],
+  "field_groups": [
+    {
+      "type": "Einsatzart",
+      "name": "Verkehrsflächenreinigung",
+      "description": null,
+      "required": true,
+      "optional": null,
+      "directory_prefix": "01. Verkehrsflächenreinigung",
+      "fields": [
+        {
+          "position": 1,
+          "name": "Vermittlungsinformation der VSS",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "01. Vermittlungsinformation",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "name": "Einsatzmeldung an Straßenbaulastträger",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "02. Einsatzmeldung an Straßenbaulastträger",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "name": "Fotodokumentation",
+          "description": "(mind. 16 Fotos) inkl.Schadenausmaß inkl. Vermessungsangaben (vor Beseitigung), alle Einsatzfahrzeuge/-geräte inkl. lesbaren Kennzeichen, Trasportfahrzeuge inkl. lesbaren Kennzeichen, Leitpfostenmarkierung/ Kilometrierung Autobahn, Frischwassermenge (Wasseruhr)",
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "03. Fotodokumentation",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "name": "Entsorgungsnachweise/Übernahmeschieine kontaminierte Abfälle",
+          "description": "Für ggf. Flüssigkeiten, Feststoffe, Ölbindemittel, Kleinteile/Kehrgut, sonstige Abfälle",
+          "quantity_min": 1,
+          "quantity_max": null,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "04. Entsorgungsnachweise",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "name": "Abnahmeprotokoll des Straßenbaulastträgers",
+          "description": "Bei Stationsangabe ggf. verunreinigte Fläche in m2 ergänzen",
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "05. Abnahmeprotokoll des Straßenbaulastträgers",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "name": "Aufmaßprotokoll mit Skizze erzeugt aus 'Car & Go!'",
+          "description": "Angabe des Personals; Angabe der Kennzeichen, Daten des Verursachers (wenn vorhanden) und seiner Versicherung",
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "06. Aufmaßprotokoll mit Skizze",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "name": "Routenbericht/ GPS-Bericht aller eingesetzten Fahrzeuge",
+          "description": "Enthalten: 1. Zeit Abfahr Betriebshof, 2. Ankunft an Schadenstelle, 3. Abfahrt von der Schadenstelle, 4. Ankunft am Betriebshof, Routendetails mithilfe von Screenshots der GPS-Route darstellen",
+          "quantity_min": 1,
+          "quantity_max": null,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "07. Routenbericht",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "name": "Kostenvorschlag",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": null,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "08. Kostenvorschlag",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Einsatzart",
+      "name": "Erdreichsanierung",
+      "description": "(ergänzende Dokumente; zusätzlich Dokumente der Verkehrsflächenreinigung einreichen)",
+      "required": false,
+      "optional": true,
+      "directory_prefix": "02. Erdreichsanierung",
+      "fields": [
+        {
+          "position": 1,
+          "name": "Sachverständigengutachten des Sachverständigen der die Erdreichsanierung vor Ort begeleitet hat",
+          "description": "Bei Stationsangabe ggf. verunreinigte Fläche in m2 ergänzen",
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "01. Sachverständigengutachten",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "name": "Zusätzliches Abnahmeprotokoll der Straßenmeisterei für Erdreichsanierung",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "02. Zusätzliches Abnahmeprotokoll der Straßenmeisterei",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "name": "Havariebestätigung der zuständigen Behörde",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "03. Havariebestätigung der zuständigen Behörde",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "name": "Wiege- und Übernahmeschein kontaminierter Boden",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "04. Wiege- und Übernahmeschein kontaminierter Boden",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "name": "Wiegeschein Neumaterial Frostschutz",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "05. Wiegeschein Neumaterial Frostschutz",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "name": "Wiegeschein Neumaterial Oberboden",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "06. Wiegeschein Neumaterial Oberboden",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "name": "Lieferschein Rasensaat",
+          "description": null,
+          "quantity_min": 1,
+          "quantity_max": 1,
+          "required": true,
+          "field_type": "file",
+          "directory_prefix": "07. Lieferschein Rasensaat",
+          "allowed_file_types": [
+            {
+              "pdf": true,
+              "jpg:": true,
+              "png": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
